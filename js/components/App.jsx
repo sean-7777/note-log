@@ -5,7 +5,7 @@ export default class App extends React.Component {
     return (
       <React.Fragment>
         <Sidebar/>
-        <Editor />
+        <Editor noteName="testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"/>
       </React.Fragment>
     )
   }

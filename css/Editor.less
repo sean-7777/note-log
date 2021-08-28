@@ -1,8 +1,32 @@
 #editor {
+  @placeholder: lighten(black, 60%);
+
   float: left;
   display: inline;
 
   .main {
     margin-left: 7vw;
+    background-color: lighten(lightskyblue, 15%);
+    height: 80vh;
+    width: 60vw;
+    resize: none;
+    overflow-y: auto;
+    word-break: break-word;
+
+    &::-webkit-input-placeholder {
+      color: @placeholder
+    }
+
+    &:-moz-placeholder {
+      color: @placeholder
+    }
+
+    &::-moz-placeholder {
+      color: @placeholder
+    }
+
+    &:-ms-input-placeholder {
+      color: @placeholder
+    }
   }
 }
